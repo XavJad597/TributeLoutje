@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+
 * {
     margin: 0;
     padding:0;
@@ -7,28 +10,55 @@
 
 /* navbar settings*/
 
-.logo{
-    font-size:32px;
+label.logo{
+    font-family: 'Explora',cursive;
+    font-size:50px;
+    font-weight:bold;
     position: relative;
+    color:red;
+    padding:-5px 30px;
+    justify-content: left;
+    
+   
 }
 
 .NavBar{
-    display: flex;
-
-   align-items: center;
-
-   justify-content: left;
-
-    padding: 50px;
-
+    display:flexbox;
+   align-items: right;
+   justify-content: right;
+    padding:26px 15px;
+    margin:-12px;
    background-color: teal;
-
    color: #fff;
 }
     
 
+.NavBar ul {
+float: right;
+margin: -10px 10px;
+justify-content: right;
+padding: 20px 10px ;
+
+
+
+}
+
 .NavBar ul li{
+    display: inline-block;
     float:left;
     list-style: none;
-    padding: 15px 12px
+    padding: 20px 12px;
+}
+
+.NavBar ul li a {
+    color:white;
+    font-size: 17px;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* here are the text settings */
+
+a:hover {
+    background: red;
 }
