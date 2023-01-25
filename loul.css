@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 
 * {
@@ -7,7 +8,9 @@
    
 }
 
-
+body{
+    background-color:#fff;
+}
 /* navbar settings*/
 
 label.logo{
@@ -15,7 +18,7 @@ label.logo{
     font-size:50px;
     font-weight:bold;
     position: relative;
-    color:red;
+    color:#412234;
     padding:-5px 30px;
     justify-content: left;
     
@@ -28,7 +31,7 @@ label.logo{
    justify-content: right;
     padding:26px 15px;
     margin:-12px;
-   background-color: teal;
+   background-color:#f8bbbb;
    color: #fff;
 }
     
@@ -51,8 +54,9 @@ padding: 20px 10px ;
 }
 
 .NavBar ul li a {
-    color:white;
-    font-size: 17px;
+    color:#412234;
+    font-size: 12px;
+    font-family: 'Lora', serif; ;
     text-transform:uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -60,5 +64,27 @@ padding: 20px 10px ;
 /* here are the text settings */
 
 a:hover {
-    background: red;
+    background: #B49FCC;
+}
+
+/* loetje picture*/
+
+.loetje {
+    border: 1px solid #ddd;
+   height: 240px;
+   width: 230px;
+ border-radius: 10%;
+ position: fixed;
+ left:1000px;
+ bottom: 500px;
+}
+
+/* text */
+h1 {
+    position: relative;
+}
+
+p1{
+    position: relative;
+    bottom:;
 }
