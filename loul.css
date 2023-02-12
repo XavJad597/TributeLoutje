@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
+@media screen { max-width: 1200px;
+    background-color: ;
+}
 
 * {
     margin: 0;
@@ -77,6 +80,15 @@ a:hover {
  position: fixed;
  left:1000px;
  bottom: 500px;
+}
+
+@media screen and (min-width:1024px ) {
+    .loetje{
+        position:relative;
+        right: 500px;
+        bottom: -24px;    
+    }
+    
 }
 
 /* text */
