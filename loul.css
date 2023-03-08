@@ -109,14 +109,34 @@ p1{
     position: relative;
     bottom:;
 }
-.text {
+
+
+
+
+/* the note block containing an introduction */
+.Note-text  {
     border: 2px solid #ccc;
   background-color: #ec5050;
-  padding: 40px;
+  box-shadow: #2b2a2a;
+  padding: 50px;
+  margin: 20px;
+  height: 40px;
   font-size: 16px;
-  font-family: Arial, sans-serif;
-  word-wrap: break-word; /* or word-break: break-all; */
-  position : fixed;
-  right:100px;
-  bottom:170px;
+  font-family: "Lora",serif;
+  position :absolute;
+  left: -299px;
+ overflow-wrap: break-word;
+  border-radius: 20px;
+  animation: Note-text 2.5s ease-in-out forwards;
 }
+
+@keyframes Note-text {
+   /* the 0% represents the starting position */
+    0% {
+      left: -2000px;
+    }
+    /* the 100 % represents the end position vw is viewwidth */
+    100% {
+      left: 60vw;
+    }
+  }
