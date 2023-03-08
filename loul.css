@@ -91,6 +91,15 @@ a:hover {
     
 }
 
+@media  screen and ( min-width:1024px) {
+        .text {
+            position: relative;
+        }
+
+}
+    
+
+
 /* text */
 h1 {
     position: relative;
@@ -99,4 +108,15 @@ h1 {
 p1{
     position: relative;
     bottom:;
+}
+.text {
+    border: 2px solid #ccc;
+  background-color: #ec5050;
+  padding: 40px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  word-wrap: break-word; /* or word-break: break-all; */
+  position : fixed;
+  right:100px;
+  bottom:170px;
 }
