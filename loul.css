@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 @media screen { max-width: 1200px;
-    background-color: ;
+    background-color:;
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color:#fff;
+    background-color:#AD68A3;
 }
 /* navbar settings*/
 
@@ -34,8 +34,9 @@ label.logo{
    justify-content: right;
     padding:26px 15px;
     margin:-12px;
-   background-color:#f8bbbb;
+   background-color:#96FABB;
    color: #fff;
+   box-shadow: 2px 5px #db7ee4;
 }
     
 
@@ -67,11 +68,12 @@ padding: 20px 10px ;
 /* here are the text settings */
 
 a:hover {
-    background: #B49FCC;
+    background: #db7ee4;
 }
 
-/* loetje picture*/
 
+/*pictures*/
+/* loetje picture*/
 .loetje {
     border: 1px solid #ddd;
    height: 240px;
@@ -79,7 +81,18 @@ a:hover {
  border-radius: 10%;
  position: fixed;
  left:1000px;
- bottom: 500px;
+ top: 45px;
+ animation: fadeIn 4s;
+}
+
+.artwork{
+    border: 1px solid #fcf1f1;
+    height:200px;
+    width: 200px;
+    border-radius:5%;
+    position: absolute;
+    left: 18px;
+    bottom: 545px;
 }
 
 @media screen and (min-width:1024px ) {
@@ -116,27 +129,72 @@ p1{
 /* the note block containing an introduction */
 .Note-text  {
     border: 2px solid #ccc;
-  background-color: #ec5050;
+  background-color: #BCFAA7;
   box-shadow: #2b2a2a;
-  padding: 50px;
-  margin: 20px;
-  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 4px;
+  height: 35px;
   font-size: 16px;
   font-family: "Lora",serif;
   position :absolute;
-  left: -299px;
+  left: 800px;
+  bottom:250px;
  overflow-wrap: break-word;
   border-radius: 20px;
-  animation: Note-text 2.5s ease-in-out forwards;
+  animation: fadeIn 4.5s;/*Note-text 2s ease-in-out forwards;*/
 }
 
+/*buttons */
+#story {
+    position: fixed;
+    left:1000px;
+    bottom: 200px;
+    padding: 6px 25px;
+    margin-top: 4px;
+    border-radius: 25px;
+    border: 2px solid #050505;
+    word-spacing: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B49FCC;
+    animation: fadeIn 2s;
+}
+
+#story:hover {
+    background-color: #db7ee4;
+}
+#LoetArt {
+    position: relative;
+    left:100px;
+    position: fixed;
+    bottom: 200px;
+    padding: 6px 25px;
+    margin-top: 4px;
+    border-radius: 25px;
+    border: 2px solid #050505;
+    word-spacing: 5px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B49FCC;
+    animation: fadeIn 2s;
+
+}
+/*animations */
 @keyframes Note-text {
    /* the 0% represents the starting position */
     0% {
-      left: -2000px;
+      left: -2300px;
     }
     /* the 100 % represents the end position vw is viewwidth */
     100% {
       left: 60vw;
     }
   }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
