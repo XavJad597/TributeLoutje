@@ -11,9 +11,14 @@
    
 }
 
-body{
-    background-color:#AD68A3;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ background-color: #1a1a1a;
 }
+
 /* navbar settings*/
 
 label.logo{
@@ -21,7 +26,7 @@ label.logo{
     font-size:50px;
     font-weight:bold;
     position: relative;
-    color:#412234;
+    color:#ddd;
     padding:-5px 30px;
     justify-content: left;
     
@@ -34,9 +39,9 @@ label.logo{
    justify-content: right;
     padding:26px 15px;
     margin:-12px;
-   background-color:#96FABB;
+   background-color:#666666;
    color: #fff;
-   box-shadow: 2px 5px #db7ee4;
+   box-shadow: 2px 5px #83058f;
 }
     
 
@@ -58,7 +63,7 @@ padding: 20px 10px ;
 }
 
 .NavBar ul li a {
-    color:#412234;
+    color:#fcf1f1;
     font-size: 12px;
     font-family: 'Lora', serif; ;
     text-transform:uppercase;
@@ -75,34 +80,36 @@ a:hover {
 /*pictures*/
 /* loetje picture*/
 .loetje {
-    border: 1px solid #ddd;
-   height: 240px;
-   width: 230px;
- border-radius: 10%;
- position: fixed;
- left:1000px;
- top: 45px;
- animation: fadeIn 4s;
+    position: relative;
+    width: 180px;
+    height: 230px;
+    border: none;
+    max-width: none;
+    max-height: none;
+    left:1000px;
+    top: 45px;
+    animation: fadeIn 4s;
 }
 
 .artwork{
-    border: 1px solid #fcf1f1;
-    height:200px;
-    width: 200px;
-    border-radius:5%;
-    position: absolute;
-    left: 18px;
-    bottom: 545px;
+    position: relative;
+    width: 175px;
+    height: 230px;
+    border: none;
+    max-width: none;
+    max-height: none;
+    left:-100px;
+    bottom: -100px;
+    animation: fadeIn 4s;
 }
-
-@media screen and (min-width:1024px ) {
-    .loetje{
-        position:relative;
+ @media screen and (min-width:1024px) {
+     .loetje { 
+      position:relative;
         right: 500px;
-        bottom: -24px;    
+        bottom: -24px;   
+  
     }
-    
-}
+} 
 
 @media  screen and ( min-width:1024px) {
         .text {
@@ -170,18 +177,23 @@ p1{
     position: relative;
     left:100px;
     position: fixed;
-    bottom: 200px;
+    bottom: 390px;
     padding: 6px 25px;
     margin-top: 4px;
-    border-radius: 25px;
-    border: 2px solid #050505;
+    border-radius: 7px;
+    border: 1px solid #e736de;
     word-spacing: 5px;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #B49FCC;
-    animation: fadeIn 2s;
+    background-color: #eb68c8;
+    animation: fadeIn 4s;
 
 }
+
+#LoetArt:hover {
+    background-color:#be2c99 ;
+}
+
 /*animations */
 @keyframes Note-text {
    /* the 0% represents the starting position */
